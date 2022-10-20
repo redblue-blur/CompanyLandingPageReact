@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.gray{
+  color:gray;
+}
+
+.green{
+  color:green;
+}
+
+.bg-gray{
+  background-color: rgb(241, 243, 242);
+}
+
+.star{
+  width: 100px !important;
+  height: 100px;
+  object-position: 100% 100%;
+}
