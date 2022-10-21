@@ -1,7 +1,7 @@
 const Services = () => {
     return (
     <>
-    <div className="container-fluid bg-gray">
+    <div className="container-fluid bg-gray ">
 		<br/>
 		<h1 className="text-center">OUR <span class="green">SERVICES</span></h1>
 		<p className="gray text-center"> cyrcsax kqdhwudb oidwid.qmd qdnwlkdn</p>
@@ -45,6 +45,7 @@ const Services = () => {
 		</div>
 		<br/>
 	</div>
+	<br/>
     </>
     )
 };
