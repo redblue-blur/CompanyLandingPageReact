@@ -1,18 +1,22 @@
-import HomeNav from "./components/HomeNav";
-import OwlC from "./components/OwlC";
-import Advantages from "./components/Advantages";
-import Services from "./components/Services";
-import FormInput from "./components/FormInput";
-import Footer from "./components/Footer";
+import Home from "./pages/Home.js";
+import Login from "./pages/Login.js";
+import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
+
 function App() {
   return (
     <>
-      <HomeNav />
-      <OwlC />
-      <Advantages />
-      <Services/>
-      <FormInput/>
-      <Footer/>
+    <Router>
+      <Switch>
+        <Route path="/login">
+          <Login/>
+        </Route>
+        <Route exact path="/">
+          <Home/>
+        </Route>
+      </Switch>
+    </Router>
+    {/* <Home/>
+    <Login/> */}
     </>
   );
 }

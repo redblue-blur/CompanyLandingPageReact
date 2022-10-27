@@ -19,7 +19,7 @@ const FormInput = () => {
   return (
   <>
   <div className="container-sm "id="myDiv">
-	<Form className="size" noValidate validated={validated} onSubmit={handleSubmit}>
+	<Form className="size" noValidate validated={validated} onSubmit={handleSubmit} id="form">
     <Form.Group as={Col} md="0" controlId="validationCustom01">
       <Form.Label>First name</Form.Label>
       <Form.Control

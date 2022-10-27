@@ -2,8 +2,10 @@ import '../componentsCss/owlC.css';
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import React, { useRef } from 'react';
 
 const OwlC = () => {
+    const scollToRef = useRef();
     return (
     <>
     <OwlCarousel 
@@ -21,7 +23,7 @@ const OwlC = () => {
 	    		<h1>WE ARE EXPERTS</h1>
 	    		<p> sgcfvjbj,kg jygyjfv gygyjvyv jjyfkdtd </p>
                 <br/>
-	    		<button type="button" class="btn btn-warning " id="button1"herf="#form">READ MORE</button>
+	    		<a href='#form' class="btn btn-warning ">READ MORE</a>
 	    	</div>
         </div>
         <div className='item helim'>
@@ -29,7 +31,7 @@ const OwlC = () => {
             <div class="owl-dots dotText">
 	    		<h1>WE ARE EXPERTS</h1>
 	    		<p> sgcfvjbj,kg jygyjfv gygyjvyv jjyfkdtd </p>
-	    		<button type="button" class="btn btn-warning " id="button1">READ MORE</button>
+	    		<a href='#form' class="btn btn-warning ">READ MORE</a>
 	    	</div>
         </div>
         <div className='item helim'>
@@ -37,10 +39,11 @@ const OwlC = () => {
             <div class="owl-dots dotText">
 	    		<h1>WE ARE EXPERTS</h1>
 	    		<p> sgcfvjbj,kg jygyjfv gygyjvyv jjyfkdtd </p>
-	    		<button type="button" class="btn btn-warning " id="button1">READ MORE</button>
+	    		<a href='#form' class="btn btn-warning ">READ MORE</a>
 	    	</div>
         </div>
     </OwlCarousel>
+    <div ref={scollToRef}></div>
     </>
     )
 };

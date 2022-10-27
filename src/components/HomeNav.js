@@ -3,15 +3,16 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import { NavLink } from 'react-router-dom'
 
 const HomeNav = () => {
     return (  
     <>
     <Navbar expand="lg" className="mb-0 navColor navHeight">
         <Container fluid>
-        <Navbar.Brand href="#">
+        <NavLink to="/">
             <img className='cLogo' src="assets/cname.jpg" alt="AGENCY" />
-        </Navbar.Brand>
+        </NavLink>
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
         <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-md`}
@@ -23,11 +24,11 @@ const HomeNav = () => {
             </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
-            <Nav className="justify-content-end flex-grow-1 pe-3 navText">
-                <Nav.Link className="navText" href="#action1">WHY US</Nav.Link>
-                <Nav.Link className="navText" navText href="#action1">ABOUT</Nav.Link>
-                <Nav.Link className="navText" href="#action2">SERVICES</Nav.Link>
-                <Nav.Link className="navText" href="#action2">CONTACT US</Nav.Link>
+            <Nav className="justify-content-end flex-grow-1 pe-2 navText">
+                <NavLink className="link" to="/whyus">WHY US</NavLink>
+                <NavLink className="link" to="/about">ABOUT</NavLink>
+                <NavLink className="link" to="/signup">SIGN UP</NavLink>
+                <NavLink className="link" to="/login">LOGIN</NavLink>
             </Nav>
             </Offcanvas.Body>
         </Navbar.Offcanvas>
